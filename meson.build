@@ -47,6 +47,9 @@ backend_sources = [
     'source/backends/rpmmd/package.d',
     'source/backends/rpmmd/rpmpkg.d',
     'source/backends/rpmmd/rpmpkgindex.d',
+    'source/backends/ubuntu/package.d',
+    'source/backends/ubuntu/ubupkg.d',
+    'source/backends/ubuntu/ubupkgindex.d',
 ]
 
 gir_binding_sources = [
