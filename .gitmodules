@@ -1,3 +1,6 @@
 [submodule "source/bindings/auto"]
 	path = source/bindings/auto
 	url = https://github.com/ximion/d-bindings.git
+[submodule "libmo"]
+	path = subprojects/libmo
+	url = https://github.com/iainlane/mo.git

@@ -396,6 +396,9 @@ else
     error('Could not find mustache-d')
 endif
 
+# for ubuntu backend
+libmo = subproject('libmo')
+
 asgen_exe = executable('appstream-generator',
     [asgen_sources,
     backend_sources,
