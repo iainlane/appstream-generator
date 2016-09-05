@@ -29,6 +29,7 @@ import glib.Internationalization;
 import glib.KeyFile;
 
 import std.container : Array;
+import std.file : buildPath;
 
 import logging;
 
@@ -82,9 +83,10 @@ private:
     {
         import std.algorithm : filter, map;
         import std.array : appender, array, split;
+        import std.conv : to;
         import std.file : dirEntries, exists, SpanMode, readText;
         import std.parallelism : parallel;
-        import std.path : baseName;
+        import std.path : baseName, mkdirRecurse;
         import std.process : Pid, spawnProcess, wait;
         import std.string : splitLines, startsWith;
 
